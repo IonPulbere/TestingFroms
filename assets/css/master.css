@@ -1,0 +1,10 @@
+html{
+background-color: #7F6560;
+color: #fff;
+}
+.wrapper{
+  max-width: 80rem;
+  width: 80%;
+  margin: 1em auto ;
+  text-align: center;
+}
