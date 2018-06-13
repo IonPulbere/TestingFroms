@@ -1,13 +1,12 @@
+
 const todoList = document.querySelector(".todo__list");
 const todoForm = document.querySelector(".todo__add");
-
 // An initial list of dummy to-do items
 let items = [
   { title: "Learn CSS Grid" },
   { title: "Feed the cat" },
   { title: "Learn how to use Firefox Debugger" }
 ];
-
 // A function to add a new To-Do item
 const addTodo = e => {
   e.preventDefault();
@@ -21,7 +20,6 @@ const addTodo = e => {
   saveList();
   document.querySelector(".todo__add").reset();
 };
-
 // A function to create the To-Do list from the items array
 const createList = (list = [], listTarget) => {
   listTarget.innerHTML = list
@@ -36,14 +34,11 @@ const createList = (list = [], listTarget) => {
     )
     .join("");
 };
-
 // function to save list
 const saveList = () => {
   createList(items, todoList);
 };
-
 // set up event listeners
 todoForm.addEventListener("submit", addTodo);
-
 // Init list
 createList(items, todoList);

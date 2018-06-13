@@ -15,3 +15,14 @@ var valel=el.value;
 el.addEventListener('input',function(){
 autocompleteM();
 },false);
+
+
+var htmlTag= document.getElementsByTagName('html')[0];
+var colInput= document.getElementById('colorID');
+function getCollor(e){
+htmlTag.style.backgroundColor=e.target.value;
+}
+colInput.addEventListener('input',function(e){
+getCollor(e);
+}
+,false)

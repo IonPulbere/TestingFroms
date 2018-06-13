@@ -18,16 +18,18 @@
           </nav>
         </header>
         <main>
+          <!-- <div class="tt">
 
+          </div> -->
           <p>My form</p>
-          <form class="mainform" action="index.html" method="post">
+          <form id="firstForm" class="mainform" action="index.html" method="post" novalidate name="formName">
             <div class="field">
               <label for="color">Color:   </label>
-              <input id="color" type="color" name="color" value="">
+              <input id="colorID" type="color" name="color" value="#ff0000">
             </div>
             <div class="field">
               <label for="date">Date: </label>
-              <input id="date" type="date" name="date" value="" required>
+              <input id="date" type="date" name="date" value="" required min="2017-04-01" max="2017-04-21" >
             </div>
             <div class="field">
               <label for="datetime">Date Time: </label>
@@ -65,7 +67,7 @@
             </div>
             <div class="field">
               <label for="search" >Search: </label>
-              <input id="search" type="search" name="search" value="" autofocus>
+              <input id="search" type="search" name="search" value="" placeholder="Search" >
             </div>
             <div class="field">
               <label for="tel">Tel: </label>
@@ -136,6 +138,7 @@
         </footer>
         <script src="assets/js/range.js">  </script>
         <script src="assets/js/app.js">  </script>
+        <script src="assets/js/validation.js"></script>
 
   </body>
 </html>
