@@ -1,11 +1,8 @@
 // Just one field
 // try to validate the email input
 var item = document.querySelector('.field input[type="email"]');
-
 function CheckIfISEmpty(item, formName) {
-  // target the form
-  var form = document.getElementById('firstForm');
-
+  //Validation Form
   function validationForm() {
     var atrname = item.getAttribute("name"); // get the name
     var x = document.forms[formName][atrname].value
@@ -32,14 +29,15 @@ function CheckIfISEmpty(item, formName) {
         existingPara.parentNode.removeChild(existingPara); //remove the child created
       }
     }
-  }
-  // validationForm();
-  item.addEventListener('blur', function() {
+  } // End of ValidationForm
+  // fire the event
+    item.addEventListener('blur', function() {
     validationForm();
   }, false);
-} // end of function
-//  Check the specified field
+} // end of function CheckIfISEmpty
+//  Create a list with all items the we need to be affected by this validation
 var listOfRequired = ['color', 'date', 'number', 'url', 'email', 'datetime', 'as'];
+// apply validation for all items
 for (var i = 0; i < listOfRequired.length; i++) {
   var item = document.querySelector('.field input[type=' + listOfRequired[i] + ']');
   if (item) {
