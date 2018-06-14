@@ -24,24 +24,24 @@ function validationForm(){
 
        }
      }
-        if(exist){ // here ledtf
-          var existingPara= document.getElementById("tempo");
-          if (existingPara) {
-            console.log('ss');
-            existingPara.parentNode.removeChild(existingPara); //remove the child created
-              }
+        // if(exist){ // here ledtf
+          // var existingPara= document.getElementById("tempo");
+          // if (itemexist) {
+          //   // console.log('ss');
+          //   existingPara.parentNode.removeChild(itemexist); //remove the child created
+          //     }
           // make it toUpperCase and concatenate
-          var s1=atrname.substring(0,1).toUpperCase();
-              atrname=s1+atrname.substring(1);
-          var neP= document.createElement("p");
-          var neText= document.createTextNode(atrname+" field is required !");
-          neP.appendChild(neText);
-          neP.className="validate-me";
-          neP.id='tempo';
-          item.parentElement.appendChild(neP);
+          // var s1=atrname.substring(0,1).toUpperCase();
+          //     atrname=s1+atrname.substring(1);
+          // var neP= document.createElement("p");
+          // var neText= document.createTextNode(atrname+" field is required !");
+          // neP.appendChild(neText);
+          // neP.className="validate-me";
+          // neP.id='tempo';
+          // item.parentElement.appendChild(neP);
 
            // return false;
-         } else{
+         // } else{
            var s1=atrname.substring(0,1).toUpperCase();
                atrname=s1+atrname.substring(1);
            var neP= document.createElement("p");
@@ -50,7 +50,7 @@ function validationForm(){
            neP.className="validate-me";
            neP.id='tempo';
            item.parentElement.appendChild(neP);
-         }
+         // }
 
   } else{
     var existingPara= document.getElementById("tempo");
